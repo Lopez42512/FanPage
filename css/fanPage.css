@@ -1,19 +1,27 @@
 body {
     background-color: aqua;
     text-align: center;
+    margin: 10%;
+    text-align: center;
+}
+
+.carousel {
+  margin-top: 10%;
+  margin-left: 10%;
 }
 
 #coverImg {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   animation: 3s ease 1s normal forwards 1 fadeOut;
 }
 @keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
+  from {opacity: 1; z-index: 1;}
+  to {opacity: 0; z-index: -1;}
 }
 
 .typewriter h1 {
